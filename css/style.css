@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Play:wght@400;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  background-color: #393e46;
+  color: #eeeeee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.hide {
+  display: none !important;
+}
+
+.container {
+  min-width: 400px;
+  min-height: 400px;
+  background-color: #222831;
+  padding: 2rem;
+  border-radius: 5px;
+}
+
+/* IMC Form */
+
+#calc-container h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  border-bottom: solid 1px #00adb5;
+}
+
+.form-inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-bottom: 1rem;
+}
+
+.form-control label {
+  font-weight: bold;
+  margin-bottom: 0.6rem;
+  color: #d1d1d1;
+}
+
+.form-control input {
+  padding: 1rem 0.5rem;
+  border-radius: 5px;
+  border: none;
+}
+
+.action-control {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+
+button {
+  text-transform: uppercase;
+  padding: 1rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #00adb5;
+  color: #eeeeee;
+  font-weight: bold;
+  opacity: 0.9;
+  border: none;
+  flex: 1;
+}
+
+button:hover {
+  opacity: 1;
+}
+
+#clear-btn {
+  background-color: #686868;
+}
+
+/* table */
+#result-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#imc-number {
+  font-size: 2.4rem;
+  margin-bottom: 0.6rem;
+}
+
+#imc-info {
+  font: 1.4rem;
+}
+
+#result-container h3 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: aliceblue;
+}
+
+#imc-table {
+  font-size: 0.8rem;
+  margin-top: 1rem;
+  margin-bottom: 0.4rem;
+}
+
+.table-header {
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.table-header,
+.table-data {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #a5a5a5;
+}
+
+.table-data {
+  margin-top: 0.5rem;
+}
+
+.table-header h4,
+.table-data p {
+  flex: 1;
+}
+
+.table-header h4:nth-child(3),
+.table-data p:nth-child(3) {
+  max-width: 80px;
+}
+
+#back-btn {
+  align-self: center;
+  margin-top: 1.5rem;
+}
+
+.good {
+  color: rgb(61, 179, 90);
+}
+
+.low {
+  color: yellow;
+}
+
+.medium {
+  color: orange;
+}
+
+.high {
+  color: red;
+}
